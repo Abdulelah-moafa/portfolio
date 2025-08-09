@@ -101,3 +101,51 @@ a:hover{ text-decoration:underline; }
   .hero .avatar{ width:120px; height:120px; }
   .quick-contact .row{ flex-wrap:wrap; }
 }
+/* ===== Mobile tweaks ===== */
+
+/* هوامش أهدى وحجم خط متوازن */
+@media (max-width: 768px) {
+  .container { padding: 18px 16px; }
+  .section { margin: 28px 0; }
+  .section h2 { font-size: 20px; }
+
+  /* الشريط العلوي */
+  .nav { gap: 10px; }
+  .brand { font-size: 14px; }
+  .btn-row { gap: 8px; flex-wrap: wrap; }
+  .nav .btn { padding: 8px 10px; font-size: 14px; }
+
+  /* صورة البروفايل والهيدر */
+  .hero { grid-template-columns: 1fr; gap: 16px; }
+  .hero .avatar { width: 120px; height: 120px; margin: 0 auto; border-radius: 50%; }
+  .hero h1 { font-size: 26px; text-align: center; }
+  .hero .role { text-align: center; }
+
+  /* البطاقات والشبكات */
+  .cards { 
+    display: grid; 
+    grid-template-columns: 1fr;   /* عمود واحد على التابلت/الجوال */
+    gap: 14px;
+  }
+  .grid-2 { grid-template-columns: 1fr; gap: 14px; }
+
+  /* الشيبس أصغر وتلف تلقائيًا */
+  .chips { gap: 6px; }
+  .chip { padding: 5px 8px; font-size: 13px; }
+
+  /* شريط التواصل السريع */
+  .quick-contact .row { padding: 8px 12px; gap: 8px; flex-wrap: wrap; }
+  .qc-pill { font-size: 13px; padding: 6px 10px; }
+}
+
+/* شاشات أصغر جدًا (آيفون قديم مثلًا) */
+@media (max-width: 480px) {
+  .container { padding: 14px 12px; }
+  .hero .avatar { width: 96px; height: 96px; }
+  .btn-primary, .nav .btn { padding: 8px 10px; font-size: 13px; }
+  .section h2 { font-size: 18px; }
+  .small { font-size: 13px; }
+
+  /* الفقرات الطويلة لا تتجاوز العرض */
+  p, li { word-wrap: break-word; overflow-wrap: anywhere; }
+}

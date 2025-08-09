@@ -149,3 +149,4 @@ a:hover{ text-decoration:underline; }
   /* الفقرات الطويلة لا تتجاوز العرض */
   p, li { word-wrap: break-word; overflow-wrap: anywhere; }
 }
+.quick-contact img { display: none; }
